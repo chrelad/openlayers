@@ -3,7 +3,7 @@
 This document describes the process of cloning the central OpenLayers repository
 and making changes to it. It is really only relevant to developers who are
 currently core committers to the OpenLayers subversion repository. If you are
-interested in contributing to the future of OpenLayers, please clone the
+interested in contributing to the future of OpenLayers, please fork the
 [central repository][1], make changes, and issue pull requests. We welcome your
 contributions and appreciate the help!
 
