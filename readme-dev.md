@@ -10,7 +10,7 @@ contributions and appreciate the help!
 This document doesn't cover the git basics. The [help pages][2] on GitHub are a
 good place to start learning git.
 
-There two type of changes developers will be making to the central OpenLayers
+There two types of changes developers will be making to the central OpenLayers
 repository. The first type will be commits that add features toward the
 OpenLayers v3 API or remove parts of the v2 API. The second type of change
 will be merges that come from the remote [OpenLayers subversion][3] repository.
