@@ -1,5 +1,5 @@
 ahocevar = ahocevar <andreas.hocevar@gmail.com>
-bartvde = bartvde <USER@DOMAIN>
+bartvde = bartvde <bartvde@osgis.nl>
 crschmidt = crschmidt <crschmidt@crschmidt.net>
 elemoine = Éric Lemoine <eric.lemoine@camptocamp.com>
 euzuro = euzuro <USER@DOMAIN>
