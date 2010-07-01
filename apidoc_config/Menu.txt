@@ -81,7 +81,6 @@ Group: OpenLayers  {
       File: ModifyFeature  (no auto-title, OpenLayers/Control/ModifyFeature.js)
       File: MouseDefaults  (no auto-title, OpenLayers/Control/MouseDefaults.js)
       File: MousePosition  (no auto-title, OpenLayers/Control/MousePosition.js)
-      File: MouseToolbar  (no auto-title, OpenLayers/Control/MouseToolbar.js)
       File: Navigation  (no auto-title, OpenLayers/Control/Navigation.js)
       File: NavigationHistory  (no auto-title, OpenLayers/Control/NavigationHistory.js)
       File: NavToolbar  (no auto-title, OpenLayers/Control/NavToolbar.js)
