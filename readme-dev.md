@@ -109,7 +109,7 @@ never make commits (with `git commit`) directly to this branch.  Instead, we
 always fetch changes from the remote subversion repository.  Run the following 
 to fetch changes and apply them as commits to your 2.x branch.
 
-    git svn rebase
+    git svn fetch
 
 At this point, you can push the commits from your local 2.x branch (the changes 
 that came from svn) to the central git repo:
