@@ -7,6 +7,6 @@ follower = follower <USER@DOMAIN>
 fredj = Frédéric Junod <frederic.junod@camptocamp.com>
 jrf = jrf <USER@DOMAIN>
 pagameba = pagameba <USER@DOMAIN>
-pgiraud = pgiraud <USER@DOMAIN>
+pgiraud = pgiraud <pierre.giraud@camptocamp.com>
 sderle = Schuyler Erle <schuyler@nocat.net>
 tschaub = tschaub <tim.schaub@gmail.com>
