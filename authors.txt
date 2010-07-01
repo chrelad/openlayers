@@ -8,5 +8,5 @@ fredj = Frédéric Junod <frederic.junod@camptocamp.com>
 jrf = jrf <USER@DOMAIN>
 pagameba = pagameba <USER@DOMAIN>
 pgiraud = pgiraud <USER@DOMAIN>
-sderle = sderle <USER@DOMAIN>
+sderle = Schuyler Erle <schuyler@nocat.net>
 tschaub = tschaub <tim.schaub@gmail.com>
