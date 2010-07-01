@@ -7,38 +7,34 @@
         .olControlPanel div { 
           display:block;
           width:  24px;
-          height: 24px;
+          height: 22px;
           margin: 5px;
           background-color:red;
         }
         
-        .olControlPanel .olControlMouseDefaultsItemActive { 
+        .olControlPanel .olControlNavigationItemActive {
           background-color: blue;
           background-image: url("../theme/default/img/pan_on.png");
         }
-        .olControlPanel .olControlMouseDefaultsItemInactive { 
+        .olControlPanel .olControlNavigationItemInactive {
           background-color: orange;
           background-image: url("../theme/default/img/pan_off.png");
         }
         .olControlPanel .olControlDrawFeatureItemActive { 
-          width:  22px;  
-          height: 22px;
           background-image: url("../theme/default/img/draw_line_on.png");
         }
         .olControlPanel .olControlDrawFeatureItemInactive { 
-          width:  22px;  
-          height: 22px;
           background-image: url("../theme/default/img/draw_line_off.png");
         }
         .olControlPanel .olControlZoomBoxItemInactive { 
-          width:  22px;  
-          height: 22px;
+          width:  27px;
+          height: 27px;
           background-color: orange;
           background-image: url("../img/drag-rectangle-off.png");
         }
         .olControlPanel .olControlZoomBoxItemActive { 
-          width:  22px;  
-          height: 22px;
+          width:  27px;
+          height: 27px;
           background-color: blue;
           background-image: url("../img/drag-rectangle-on.png");
         }
@@ -71,7 +67,7 @@
                 {title:"Zoom box: Selecting it you can zoom on an area by clicking and dragging."});
             var panel = new OpenLayers.Control.Panel({defaultControl: zb});
             panel.addControls([
-                new OpenLayers.Control.MouseDefaults(
+                new OpenLayers.Control.Navigation(
                     {title:'You can use the default mouse configuration'}), 
                 zb,
                 new OpenLayers.Control.DrawFeature(vlayer, OpenLayers.Handler.Path,

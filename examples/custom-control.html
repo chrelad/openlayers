@@ -19,7 +19,7 @@
                 OpenLayers.Util.extend(control, {
                     draw: function () {
                         // this Handler.Box will intercept the shift-mousedown
-                        // before Control.MouseDefault gets to see it
+                        // before Control.Navigation gets to see it
                         this.box = new OpenLayers.Handler.Box( control,
                             {"done": this.notice},
                             {keyMask: OpenLayers.Handler.MOD_SHIFT});

@@ -24,7 +24,7 @@
 
         function init(){
             map = new OpenLayers.Map( 'map' , 
-            {controls:[new OpenLayers.Control.MouseDefaults()]});
+            {controls:[new OpenLayers.Control.Navigation()]});
 
             mmlayer = new OpenLayers.Layer.MultiMap( "MultiMap");
             map.addLayer(mmlayer);
