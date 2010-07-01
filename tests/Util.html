@@ -1,9 +1,5 @@
 <html>
 <head>
-  <script>
-    var custom$ = function() {};
-    window.$ = custom$;
-  </script>
   <script src="../lib/OpenLayers.js"></script>
   <script type="text/javascript">
     var isMozilla = (navigator.userAgent.indexOf("compatible") == -1);
@@ -25,11 +21,6 @@
         o = OpenLayers.Util.getElement("map");
         t.eq(OpenLayers.Util.isElement(o), true,
              "isElement reports that object returned by getElement is an Element");
-    }
-    
-    function test_$(t) {
-        t.plan(1);
-        t.ok($ === custom$, "OpenLayers doesn't clobber existing definition of $.");
     }
     
     function test_Util_getImagesLocation (t) {
