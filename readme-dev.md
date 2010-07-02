@@ -8,7 +8,7 @@ interested in contributing to the future of OpenLayers, please fork the
 contributions and appreciate the help!
 
 This document doesn't cover the git basics. The [help pages][2] on GitHub are a
-good place to start learning git.  In particular, the document on [forking][4]
+good place to start learning git.  In particular, the document on [forking][3]
 is a particularly good read for those who wish to contribute to the project but
 don't have commit rights on the central repository.  The rest of this document
 pertains to changes made by developers with access to the central repository
@@ -18,11 +18,12 @@ well).
 There two types of changes developers will be making to the central OpenLayers
 repository. The first type will be commits that add features toward the
 OpenLayers v3 API or remove parts of the v2 API. The second type of change
-will be merges that come from the remote [OpenLayers subversion][3] repository.
+will be merges that come from the remote [OpenLayers subversion][4] repository.
 
 [1]: http://github.com/openlayers/openlayers
 [2]: http://help.github.com/
-[3]: http://svn.openlayers.org/trunk/openlayers
+[3]: http://help.github.com/forking/
+[4]: http://svn.openlayers.org/trunk/openlayers
 
 
 ## Pushing Commits to the Central Repository
