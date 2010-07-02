@@ -328,7 +328,6 @@ Group: OpenLayers  {
       File: Vector  (no auto-title, OpenLayers/Layer/Vector.js)
       File: Vector.RootContainer  (no auto-title, OpenLayers/Layer/Vector/RootContainer.js)
       File: VirtualEarth  (no auto-title, OpenLayers/Layer/VirtualEarth.js)
-      File: WFS  (no auto-title, OpenLayers/Layer/WFS.js)
       File: WMS  (no auto-title, OpenLayers/Layer/WMS.js)
       File: WMS.Post  (no auto-title, OpenLayers/Layer/WMS/Post.js)
       File: WorldWind  (no auto-title, OpenLayers/Layer/WorldWind.js)
