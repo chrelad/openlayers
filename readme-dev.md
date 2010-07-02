@@ -8,7 +8,12 @@ interested in contributing to the future of OpenLayers, please fork the
 contributions and appreciate the help!
 
 This document doesn't cover the git basics. The [help pages][2] on GitHub are a
-good place to start learning git.
+good place to start learning git.  In particular, the document on [forking][4]
+is a particularly good read for those who wish to contribute to the project but
+don't have commit rights on the central repository.  The rest of this document
+pertains to changes made by developers with access to the central repository
+(but those folks are encouraged to use their own forks for pushing changes as
+well).
 
 There two types of changes developers will be making to the central OpenLayers
 repository. The first type will be commits that add features toward the
