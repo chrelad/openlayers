@@ -15,7 +15,7 @@ pertains to changes made by developers with access to the central repository
 (but those folks are encouraged to use their own forks for pushing changes as
 well).
 
-There two types of changes developers will be making to the central OpenLayers
+There are two types of changes developers will be making to the central OpenLayers
 repository. The first type will be commits that add features toward the
 OpenLayers v3 API or remove parts of the v2 API. The second type of change
 will be merges that come from the remote [OpenLayers subversion][4] repository.
@@ -173,7 +173,7 @@ email addresses.
 Next, run the following (and substitute the path to the above mentioned 
 authors.txt):
 
-    git svn clone -A path/to/authors.txt http://svn.layers.org/trunk/openlayers ol3
+    git svn clone -A path/to/authors.txt http://svn.openlayers.org/trunk/openlayers ol3
     cd ol3
     git remote add origin git@github.com:openlayers/openlayers.git
     git checkout -b 2.x git-svn
