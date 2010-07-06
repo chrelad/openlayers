@@ -80,7 +80,7 @@ information or adding a new author from the subversion log.
 Finally, you need to configure your repo so it knows about the latest commit 
 that the remote git-svn refers to.  To do this, run the following:
 
-    git show origin/2.x | head -n 1 | sed 's/commit //' > .git/refs/remotes/git-svn
+    git update-ref refs/remotes/git-svn origin/2.x
 
 At this point, your local git repository should be configured to fetch changes
 from the remote OpenLayers subversion repository.  Changes from this repository
