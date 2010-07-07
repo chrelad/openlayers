@@ -9,4 +9,4 @@ jrf = jrf <USER@DOMAIN>
 pagameba = Paul Spencer <pspencer@dmsolutions.ca>
 pgiraud = pgiraud <pierre.giraud@camptocamp.com>
 sderle = Schuyler Erle <schuyler@nocat.net>
-tschaub = tschaub <tim.schaub@gmail.com>
+tschaub = Tim Schaub <tim.schaub@gmail.com>
