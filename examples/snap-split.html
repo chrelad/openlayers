@@ -173,15 +173,15 @@
          */
         function initUI() {
             // add behavior to snap elements
-            var snapCheck = $("snap_toggle");
+            var snapCheck = OpenLayers.Util.getElement("snap_toggle");
             snapCheck.checked = true;
             snapCheck.onclick = function() {
                 if(snapCheck.checked) {
                     snap.activate();
-                    $("snap_options").style.display = "block";
+                    OpenLayers.Util.getElement("snap_options").style.display = "block";
                 } else {
                     snap.deactivate();
-                    $("snap_options").style.display = "none";
+                    OpenLayers.Util.getElement("snap_options").style.display = "none";
                 }
             };
             var target, type, tog, tol;
@@ -189,12 +189,12 @@
             var target = snap.targets[0];
             for(var j=0; j<types.length; ++j) {
                 type = types[j];
-                tog = $("target_" + type);
+                tog = OpenLayers.Util.getElement("target_" + type);
                 tog.checked = target[type];
                 tog.onclick = (function(tog, type, target) {
                     return function() {target[type] = tog.checked;}
                 })(tog, type, target);
-                tol = $("target_" + type + "Tolerance");
+                tol = OpenLayers.Util.getElement("target_" + type + "Tolerance");
                 tol.value = target[type + "Tolerance"];
                 tol.onchange = (function(tol, type, target) {
                     return function() {
@@ -204,24 +204,24 @@
             }
 
             // add behavior to split elements
-            var splitCheck = $("split_toggle");
+            var splitCheck = OpenLayers.Util.getElement("split_toggle");
             splitCheck.checked = true;
             splitCheck.onclick = function() {
                 if(splitCheck.checked) {
                     split.activate();
-                    $("split_options").style.display = "block";
+                    OpenLayers.Util.getElement("split_options").style.display = "block";
                 } else {
                     split.deactivate();
-                    $("split_options").style.display = "none";
+                    OpenLayers.Util.getElement("split_options").style.display = "none";
                 }
             };
-            var edgeCheck = $("edge_toggle");
+            var edgeCheck = OpenLayers.Util.getElement("edge_toggle");
             edgeCheck.checked = split.edge;
             edgeCheck.onclick = function() {
                 split.edge = edgeCheck.checked;
             };
             
-            $("clear").onclick = function() {
+            OpenLayers.Util.getElement("clear").onclick = function() {
                 modify.deactivate();
                 vectors.destroyFeatures();
             };

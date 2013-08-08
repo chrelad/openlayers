@@ -141,21 +141,21 @@
             
             function display(event) {
                 // clear previous photo list and create new one
-                $("photos").innerHTML = "";
+                OpenLayers.Util.getElement("photos").innerHTML = "";
                 var node = template.process({
                     context: {features: event.feature.cluster},
                     clone: true,
-                    parent: $("photos")
+                    parent: OpenLayers.Util.getElement("photos")
                 });
                 // set up forward/rewind
-                var forward = Animator.apply($("list"), ["start", "end"], {duration: 1500});
-                $("scroll-end").onmouseover = function() {forward.seekTo(1)};
-                $("scroll-end").onmouseout = function() {forward.seekTo(forward.state)};
-                $("scroll-start").onmouseover = function() {forward.seekTo(0)};
-                $("scroll-start").onmouseout = function() {forward.seekTo(forward.state)};
+                var forward = Animator.apply(OpenLayers.Util.getElement("list"), ["start", "end"], {duration: 1500});
+                OpenLayers.Util.getElement("scroll-end").onmouseover = function() {forward.seekTo(1)};
+                OpenLayers.Util.getElement("scroll-end").onmouseout = function() {forward.seekTo(forward.state)};
+                OpenLayers.Util.getElement("scroll-start").onmouseover = function() {forward.seekTo(0)};
+                OpenLayers.Util.getElement("scroll-start").onmouseout = function() {forward.seekTo(forward.state)};
                 // set up photo zoom
                 for(var i=0; i<event.feature.cluster.length; ++i) {
-                    listen($("link-" + i), Animator.apply($("photo-" + i), ["thumb", "big"]));
+                    listen(OpenLayers.Util.getElement("link-" + i), Animator.apply(OpenLayers.Util.getElement("photo-" + i), ["thumb", "big"]));
                 }
             }
             

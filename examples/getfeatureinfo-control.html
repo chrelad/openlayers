@@ -121,7 +121,7 @@
              highlightLayer.addFeatures(evt.features);
              highlightLayer.redraw();
         } else {
-            $('responseText').innerHTML = evt.text;
+            OpenLayers.Util.getElement('responseText').innerHTML = evt.text;
         }
     }
 

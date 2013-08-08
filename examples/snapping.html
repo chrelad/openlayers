@@ -187,7 +187,7 @@
          * property values.
          */
         function initUI() {
-            var check = $("snapping");
+            var check = OpenLayers.Util.getElement("snapping");
             check.checked = true;
             check.onclick = function() {
                 if(check.checked) {
@@ -197,7 +197,7 @@
                 }
             };
             
-            var sel = $("editable");
+            var sel = OpenLayers.Util.getElement("editable");
             sel.value = "poly";
             sel.onchange = function() {
                 updateEditable(sel.value);
@@ -209,12 +209,12 @@
                 target = snap.targets[i];
                 for(var j=0; j<types.length; ++j) {
                     type = types[j];
-                    tog = $(i + "_" + type);
+                    tog = OpenLayers.Util.getElement(i + "_" + type);
                     tog.checked = target[type];
                     tog.onclick = (function(tog, type, target) {
                         return function() {target[type] = tog.checked;}
                     })(tog, type, target);
-                    tol = $(i + "_" + type + "Tolerance");
+                    tol = OpenLayers.Util.getElement(i + "_" + type + "Tolerance");
                     tol.value = target[type + "Tolerance"];
                     tol.onchange = (function(tol, type, target) {
                         return function() {

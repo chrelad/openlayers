@@ -4,10 +4,6 @@ Customizing OpenLayers
 OpenLayers is designed to fit many needs -- fitting in alongside all kinds of
 various applications which are currently in use. 
 
-Currently, OpenLayers supports a 'theme' option when creating a map. This 
-theme option allows you to specify the location of a CSS theme which should
-be included.
-
 A default theme is available as an example in the theme/ directory: the setup
 is:
 

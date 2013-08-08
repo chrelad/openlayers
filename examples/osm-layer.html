@@ -17,10 +17,10 @@
         function export_vectors() {
             var x = new OpenLayers.Format.XML();
             var content = x.write(gml.renderer.rendererRoot);
-            $("vectors").value = content;
-            $("vectors").style.display = "block";
-            $("vectorlink").href = "data:image/svg+xml," + escape(content);
-            $("vectorlink").style.display="block";
+            OpenLayers.Util.getElement("vectors").value = content;
+            OpenLayers.Util.getElement("vectors").style.display = "block";
+            OpenLayers.Util.getElement("vectorlink").href = "data:image/svg+xml," + escape(content);
+            OpenLayers.Util.getElement("vectorlink").style.display="block";
         }
         function on_feature_hover(feature) {
             var text ="<ul>";
@@ -33,7 +33,7 @@
                 text += "<li>" + key + ": " + feature.attributes[key] + "</li>";
             }
             text += "</ul>";
-            $("status").innerHTML = text;
+            OpenLayers.Util.getElement("status").innerHTML = text;
         }   
         function clear_data() {
             gml.destroyFeatures();
@@ -43,7 +43,7 @@
             clear_data();
             gml.loaded = false;
             gml.url = "http://www.openstreetmap.org/api/0.5/map?bbox=" + map.getExtent().toBBOX();
-            $("status").innerHTML = "Loading more data...";
+            OpenLayers.Util.getElement("status").innerHTML = "Loading more data...";
             gml.loadGML();
         }
         function style_osm_feature(feature) {
@@ -63,7 +63,7 @@
             var zoom = map.getZoom();
             if (zoom >= 11) { return true; }
             if (zoom >= 9) { return confirm("Loading this amount of data may slow your browser. Are you sure you want to do this?"); }
-            $("status").innerHTML = "Area too large. Zoom in to load data. (Current zoom level: "+ zoom + ". Must be at zoom 9+.)";
+            OpenLayers.Util.getElement("status").innerHTML = "Area too large. Zoom in to load data. (Current zoom level: "+ zoom + ". Must be at zoom 9+.)";
             return false;
         }    
         function init(){
@@ -92,8 +92,8 @@
                     gml = new OpenLayers.Layer.GML("OSM", "xml/cambridgeport.osm", {format: OpenLayers.Format.OSM});
                 }    
             }    
-            gml.events.register("loadstart", null, function() { $("status").innerHTML = "Loading..."; })
-            gml.events.register("loadend", null, function() { $("status").innerHTML = ""; })
+            gml.events.register("loadstart", null, function() { OpenLayers.Util.getElement("status").innerHTML = "Loading..."; })
+            gml.events.register("loadend", null, function() { OpenLayers.Util.getElement("status").innerHTML = ""; })
             map.addLayer(gml);
             gml.preFeatureInsert = style_osm_feature; 
             var sf = new OpenLayers.Control.SelectFeature(gml, {'onSelect': on_feature_hover});

@@ -23,10 +23,10 @@
             var vectors = new OpenLayers.Layer.Vector("Vector Layer");
             vectors.events.on({
                 'featureselected': function(feature) {
-                    $('counter').innerHTML = this.selectedFeatures.length;
+                    OpenLayers.Util.getElement('counter').innerHTML = this.selectedFeatures.length;
                 },
                 'featureunselected': function(feature) {
-                    $('counter').innerHTML = this.selectedFeatures.length;
+                    OpenLayers.Util.getElement('counter').innerHTML = this.selectedFeatures.length;
                 },
             });
 

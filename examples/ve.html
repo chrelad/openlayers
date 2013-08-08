@@ -15,7 +15,7 @@
 
         function init(){
             map = new OpenLayers.Map( 'map' ,
-            {controls:[new OpenLayers.Control.MouseDefaults()]});
+            {controls:[new OpenLayers.Control.Navigation()]});
 
             velayer = new OpenLayers.Layer.VirtualEarth( "VE", {
                 // turn off animated zooming

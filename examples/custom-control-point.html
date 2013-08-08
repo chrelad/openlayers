@@ -11,7 +11,7 @@
         var map, layer;
 
         function init(){
-            map = new OpenLayers.Map( $('map') );
+            map = new OpenLayers.Map('map');
 
             layer = new OpenLayers.Layer.WMS( "OpenLayers WMS",
                     "http://labs.metacarta.com/wms/vmap0", {layers: 'basic'} );
@@ -20,7 +20,7 @@
             OpenLayers.Util.extend(control, {
                 draw: function () {
                     // this Handler.Point will intercept the shift-mousedown
-                    // before Control.MouseDefault gets to see it
+                    // before Control.Navigation gets to see it
                     this.point = new OpenLayers.Handler.Point( control,
                         {"done": this.notice},
                         {keyMask: OpenLayers.Handler.MOD_SHIFT});
